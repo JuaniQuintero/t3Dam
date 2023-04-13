@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#pag1 h3:nth-child(1){
+    background-color: aquamarine;
+}
+#pag2 h3:nth-child(3){
+    background-color: aquamarine;
+}
+
+#pag3 h3:nth-child(4){
+    background-color: aquamarine;
+}
+nav{
+    width: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+h3, a {
+   display: inline-block;
+}
+h3{
+    width: 32%;
+}
