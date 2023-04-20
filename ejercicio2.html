@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de JS</title>
+    <style>
+        pre{
+            display:inline-block;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        'use strict';
+        let x=parseInt(prompt("Ingrese algo"));
+        let y=parseInt(prompt("Ingrese algo"));
+        
+        for(let i=0;i<y;i++){
+            if(i%8==0&&i!=0){
+                document.write("<br>");
+            }
+            document.write(x)
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+       var pir="";
+        for(let i=0;i<3;i++){
+            for(let p=1;p<3-i;p++){
+                pir+="<pre> </pre>"
+            }
+            for(let z=1;z<40;z++){
+                pir+="<pre> </pre>"
+            }    
+            switch(i){
+            case 0:
+                pir+="*";
+                break;
+            case 1:
+                for(let j=0;j<3;j++){
+                    pir+="o";
+                }
+                break;
+            case 2:
+            for(let k=0;k<5;k++){
+                    if(k==0||k==4){
+                        pir+="*";
+                    }else{
+                        pir+="o";
+                    }
+                    
+                }   
+            break;
+            }
+            for(let p=1;p<3-i;p++){
+                    pir+="<pre> </pre>"
+            }
+            for(let z=1;z<40;z++){
+                pir+="<pre> </pre>"
+            }
+            pir+="<br/>"
+        }
+        document.write(pir);
+    </script>
+</body>
+</html>
