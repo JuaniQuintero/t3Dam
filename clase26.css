@@ -1,0 +1,43 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.engloba2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+.engloba{
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    height: 50px;
+    width: 50px;
+}
+#d1{
+    background-color: antiquewhite;
+}
+#d1{
+    background-color: yellow;
+}
+#d1{
+    background-color: pink;
+}
+#d1{
+    background-color: greenyellow;
+}
+#d1{
+    background-color: red;
+}
