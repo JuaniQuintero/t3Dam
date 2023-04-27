@@ -3,25 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-#columna{
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-style: solid;
+    border-color: aqua;
+}
+.columna{
     display:flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
     justify-content: space-between;
 }
-.fila{
+.adentro{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
-.cuadrito{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cuadrado{
     width:10%;
     height: 10vh;
     background-color: yellow;
-    border-color: red;
 }
