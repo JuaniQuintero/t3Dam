@@ -5,8 +5,8 @@
 }
 #exterior {
     border-style:solid;
-    width:48vw;
-    height:50vh;
+    width:500px;
+    height:500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
