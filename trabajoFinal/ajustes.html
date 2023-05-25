@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes</title>
+    <link rel="stylesheet" href="ajustes.css">
+</head>
+<body>
+    <section id="ajustes">
+        <p id="meterUsuario">Dime el nombre de usuario que quieres que se vea</p>
+        <input type="text" name="usuario" id="inputUsuario"/>
+        <p id="esteParrafo">Elija un Color</p>
+        <input type="color" name="colorElegido" />
+        <br />
+
+        <p>Elija la fuente base del documento</p>
+        <select name="tamFuente">
+            <option value="0.8">Pequeña</option>
+            <option value="1.0" selected="selected">Mediana</option>
+            <option value="1.4">Grande</option>
+        </select>
+        <button type="button" onclick="aplicarCambios()">APLICAR</button>
+
+        <h1> GUÍA DE ESTILOS ELEGIDA (H1)</h2>
+            <h2>Titulo H2</h2>
+            <h3>Titulo H3</h3>
+            <p>Parrafo normal</p>
+            <p id="mensaje"></p>
+            <p id="nombre"></p>
+    </section>
+
+    <script>
+        var textoNombre= window.sessionStorage.getItem("--nombreGuardado");
+        var colorPaginas = window.sessionStorage.getItem("--colorNormal");
+        if(textoNombre!=null){
+            ponerNombre();
+        }else{
+            ponerTextoPorDefecto();
+        }
+
+        if(colorPaginas!=null){
+            cambiarColor();
+        }
+        function ponerTextoPorDefecto(){
+            document.getElementById('nombre').innerHTML="usuario activo: sin identificar";
+        }
+        function ponerNombre(){
+            document.getElementById('nombre').innerHTML="usuario activo: "+ 
+            sessionStorage.getItem("--nombreGuardado");
+        }
+        function cambiarColor(){
+            document.documentElement.style.setProperty("--colorNormal", sessionStorage.getItem("--colorNormal"));
+        }
+            
+
+        function aplicarCambios() {
+            // mostramos en consola los valores recogidos en la pagina
+            var color = document.getElementsByName('colorElegido')[0];
+            console.log('color elegido ' + color.value);
+
+            var tam = document.getElementsByName('tamFuente')[0];
+            var tamelegido = tam[tam.selectedIndex].value;
+
+            var nombre = document.getElementById('inputUsuario');
+            console.log('el nombre es ' + nombre.value);
+
+
+            //escribo el nombre
+            sessionStorage.setItem("--nombreGuardado",nombre.value);
+            ponerNombre();
+            //document.getElementById('nombre').innerHTML="usuario activo: " + nombre.value;
+            
+
+            // aplicamos el tamaño a todo el documento
+            document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+
+            //cambiar color
+            sessionStorage.setItem("--colorNormal",color.value);
+            cambiarColor();
+
+            document.getElementById('mensaje').innerHTML = "APLICADO";
+        }
+    </script>
+</body>
+</html>

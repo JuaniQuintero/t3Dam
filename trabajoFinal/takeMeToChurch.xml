@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cancion.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/xampp/htdocs/lm-Juan%20Ignacio%20Quintero/soldadito.xsd">
+    <texto>
+        <informacion>
+            <titulo>Take Me to Church</titulo>
+            <autor>Hozier</autor>
+        </informacion>
+        <estrofa>
+            <tipo>normal</tipo>
+            <orden>1</orden>
+            <verso>My lover's got humor</verso>
+            <verso>She's the giggle at a funeral</verso>
+            <verso>Knows everybody's disapproval</verso>
+            <verso>I should've worshiped her sooner</verso>
+            <verso>If the Heavens ever did speak</verso>
+            <verso>She's the last true mouthpiece</verso>
+            <verso>Every Sunday's getting more bleak</verso>
+            <verso>A fresh poison each week</verso>
+            <verso>"We were born sick", you heard them say it</verso>
+            <verso>My church offers no absolutes</verso>
+            <verso>She tells me, "Worship in the bedroom"</verso>
+            <verso>The only Heaven I'll be sent to</verso>
+            <verso>Is when I'm alone with you</verso>
+            <verso>I was born sick, but I love it</verso>
+            <verso>Command me to be well</verso>
+            <verso>A-, Amen, Amen, Amen</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <tipo>estribillo</tipo>
+            <orden>2</orden>
+            <verso>Take me to church</verso>
+            <verso>I'll worship like a dog at the shrine of your lies</verso>
+            <verso>I'll tell you my sins and you can sharpen your knife</verso>
+            <verso>Offer me that deathless death</verso>
+            <verso>Good God, let me give you my life</verso>
+            <verso>Take me to church</verso>
+            <verso>I'll worship like a dog at the shrine of your lies</verso>
+            <verso>I'll tell you my sins and you can sharpen your knife</verso>
+            <verso>Offer me that deathless death</verso>
+            <verso>Good God, let me give you my life</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <tipo>normal</tipo>
+            <orden>3</orden>
+            <verso>If I'm a pagan of the good times</verso>
+            <verso>My lover's the sunlight</verso>
+            <verso>To keep the Goddess on my side</verso>
+            <verso>She demands a sacrifice</verso>
+            <verso>Drain the whole sea</verso>
+            <verso>Get something shiny</verso>
+            <verso>Something meaty for the main course</verso>
+            <verso>That's a fine looking high horse</verso>
+            <verso>What you got in the stable?</verso>
+            <verso>We've a lot of starving faithful</verso>
+            <verso>That looks tasty</verso>
+            <verso>That looks plenty</verso>
+            <verso>This is hungry work</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <tipo>estribillo</tipo>
+            <orden>4</orden>
+            <verso>Take me to church</verso>
+            <verso>I'll worship like a dog at the shrine of your lies</verso>
+            <verso>I'll tell you my sins so you can sharpen your knife</verso>
+            <verso>Offer me my deathless death</verso>
+            <verso>Good God, let me give you my life</verso>
+            <verso>Take me to church</verso>
+            <verso>I'll worship like a dog at the shrine of your lies</verso>
+            <verso>I'll tell you my sins so you can sharpen your knife</verso>
+            <verso>Offer me my deathless death</verso>
+            <verso>Good God, let me give you my life</verso>
+        </estrofa>
+    </texto>
+
+    <texto>
+        <estrofa>
+            <tipo>normal</tipo>
+            <orden>5</orden>
+            <verso>No masters or kings when the ritual begins</verso>
+            <verso>There is no sweeter innocence than our gentle sin</verso>
+            <verso>In the madness and soil of that sad earthly scene</verso>
+            <verso>Only then I am human</verso>
+            <verso>Only then I am clean</verso>
+            <verso>Oh, oh, Amen, Amen, Amen</verso>
+        </estrofa>
+    </texto>
+    
+    <texto>
+        <estrofa>
+            <tipo>estribillo</tipo>
+            <orden>6</orden>
+            <verso>Take me to church</verso>
+            <verso>I'll worship like a dog at the shrine of your lies</verso>
+            <verso>I'll tell you my sins and you can sharpen your knife</verso>
+            <verso>Offer me that deathless death</verso>
+            <verso>Good God, let me give you my life</verso>
+            <verso>Take me to church</verso>
+            <verso>I'll worship like a dog at the shrine of your lies</verso>
+            <verso>I'll tell you my sins and you can sharpen your knife</verso>
+            <verso>Offer me that deathless death</verso>
+            <verso>Good God, let me give you my life</verso>
+        </estrofa>
+    </texto>
+</cancion>
