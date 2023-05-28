@@ -16,11 +16,19 @@
             <div class="caja2">
                 <li class="menu-item"><a class="menu-link" href="paginaPrincipal.html">Pagina Principal</a></li>
                 <li class="menu-item"><a class="menu-link" href="ajustes.html">AJUSTES</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Más Info</a></li>
+                <li class="menu-item"><a class="menu-link" href="#" onclick="window.modal1.showModal();">Más Info</a></li>
                 <li class="menu-item"><a class="menu-link" href="https://juaniquintero.github.io/Publico/Trabajo25-01/takeMeToChurch.xml">XML</a></li>
             </div>
         </ul>
     </nav>
+    <dialog id="modal1">
+        <p>Nombre: Juan Ignacio Quintero</p>
+        <p>Curso: 1°DAM</p>
+        <p>Elementos de entrada de datos: Se puede visualizar en ajustes</p>
+        <p>JavaScript-Lectura, Modificación y Consola: En la página de ajustes se ven las 3</p>
+        <p>Nombre visible del usuario en una esquina del viewport: se inserta desde ajustes.</p>
+           <button class="cerrarBoton" onclick="window.modal1.close();">Cerrar</button>
+       </dialog>
     <div class="textoUsuario">
         <p id="nombre" class="mover"></p>
     </div>
