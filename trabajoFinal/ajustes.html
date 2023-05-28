@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="ajustes.css">
 </head>
 <body>
+    <nav class="nav">
+        <ul class="menu">
+            <div class="caja1">
+                <li class="menu-item"><a class="menu-link actual" href="#">AJUSTES</a></li>
+            </div>    
+            <div class="caja2">
+                <li class="menu-item"><a class="menu-link" href="paginaPrincipal.html">Pagina Principal</a></li>
+                <li class="menu-item"><a class="menu-link" href="tateti.html">TaTeTi</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Más Info</a></li>
+                <li class="menu-item"><a class="menu-link" href="https://juaniquintero.github.io/Publico/Trabajo25-01/takeMeToChurch.xml">XML</a></li>
+            </div>
+        </ul>
+    </nav>
     <section id="ajustes">
         <p id="meterUsuario">Dime el nombre de usuario que quieres que se vea</p>
         <input type="text" name="usuario" id="inputUsuario"/>
@@ -28,60 +41,13 @@
             <h3>Titulo H3</h3>
             <p>Parrafo normal</p>
             <p id="mensaje"></p>
-            <p id="nombre"></p>
+            <div class="textoUsuario">
+                <p id="nombre" class="mover"></p>
+            </div>
     </section>
 
-    <script>
-        var textoNombre= window.sessionStorage.getItem("--nombreGuardado");
-        var colorPaginas = window.sessionStorage.getItem("--colorNormal");
-        if(textoNombre!=null){
-            ponerNombre();
-        }else{
-            ponerTextoPorDefecto();
-        }
-
-        if(colorPaginas!=null){
-            cambiarColor();
-        }
-        function ponerTextoPorDefecto(){
-            document.getElementById('nombre').innerHTML="usuario activo: sin identificar";
-        }
-        function ponerNombre(){
-            document.getElementById('nombre').innerHTML="usuario activo: "+ 
-            sessionStorage.getItem("--nombreGuardado");
-        }
-        function cambiarColor(){
-            document.documentElement.style.setProperty("--colorNormal", sessionStorage.getItem("--colorNormal"));
-        }
-            
-
-        function aplicarCambios() {
-            // mostramos en consola los valores recogidos en la pagina
-            var color = document.getElementsByName('colorElegido')[0];
-            console.log('color elegido ' + color.value);
-
-            var tam = document.getElementsByName('tamFuente')[0];
-            var tamelegido = tam[tam.selectedIndex].value;
-
-            var nombre = document.getElementById('inputUsuario');
-            console.log('el nombre es ' + nombre.value);
-
-
-            //escribo el nombre
-            sessionStorage.setItem("--nombreGuardado",nombre.value);
-            ponerNombre();
-            //document.getElementById('nombre').innerHTML="usuario activo: " + nombre.value;
-            
-
-            // aplicamos el tamaño a todo el documento
-            document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
-
-            //cambiar color
-            sessionStorage.setItem("--colorNormal",color.value);
-            cambiarColor();
-
-            document.getElementById('mensaje').innerHTML = "APLICADO";
-        }
+    <script src="ajustes.js">
+      
     </script>
 </body>
 </html>

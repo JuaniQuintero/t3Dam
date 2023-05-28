@@ -1,60 +1,8 @@
-:root {
-    --colorNormal:black;
-    font-size:1rem;
-    
-    --nombreGuardado:no;
-    /* ventajas del REM vs PX: funciona con el zoom
-    el navegador usa REM por defecto en 14 o 16 px dependiendo... */
-    
-}
-body{
+* {
+    padding:0;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    background-color: rgb(160, 202, 160);
 }
-.menu{
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: green;
-}
-
-.caja2{
-   display: flex;
-   flex-direction:row;
-}
-.menu-item{
-    padding: 1.2em;
-}
-.menu-link{
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.actual{
-    cursor: default;
-}
-.textoUsuario{
-    width: 100vw; 
-}
-.mover{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;   
-}
-p, h1, h2, h3 {
-    color:var(--colorNormal);
-}
-
-
-
-
-/*CSS para la página del tateti*/
 #exterior {
     border-style:solid;
     width:500px;

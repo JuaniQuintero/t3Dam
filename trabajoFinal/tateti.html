@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tateti</title>
+    <link rel="stylesheet" href="./ajustes.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="menu">
+            <div class="caja1">
+                <li class="menu-item"><a class="menu-link actual" href="#">TaTeTi</a></li>
+            </div>    
+            <div class="caja2">
+                <li class="menu-item"><a class="menu-link" href="paginaPrincipal.html">Pagina Principal</a></li>
+                <li class="menu-item"><a class="menu-link" href="ajustes.html">AJUSTES</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Más Info</a></li>
+                <li class="menu-item"><a class="menu-link" href="https://juaniquintero.github.io/Publico/Trabajo25-01/takeMeToChurch.xml">XML</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="textoUsuario">
+        <p id="nombre" class="mover"></p>
+    </div>
+    <section class="title">
+        <h1>3 en raya (Tateti)</h1>
+    </section>
+    <section class="display" id ="displayInfo">
+        Empezamos por el jugador <span class="display-player playerX">x</span>
+	</section>
+ 
+    <div id="exterior">
+        <div class="fila">
+            <div class = "caja" id="caja1" onMouseEnter="pintar('lightgoldenrodyellow','caja1')" onMouseLeave="pintar('#fff','caja1')" 
+            onclick="escribirSimbolo('caja1')"></div>
+            <div class = "caja" id="caja2" onMouseEnter="pintar('lightgoldenrodyellow','caja2')" onMouseLeave="pintar('#fff','caja2')"
+            onclick="escribirSimbolo('caja2')"></div>
+            <div class = "caja" id="caja3" onMouseEnter="pintar('lightgoldenrodyellow','caja3')" onMouseLeave="pintar('#fff','caja3')"
+            onclick="escribirSimbolo('caja3')"></div>
+        </div>
+        <div class="fila">
+            <div class = "caja" id="caja4" onMouseEnter="pintar('lightgoldenrodyellow','caja4')" onMouseLeave="pintar('#fff','caja4')"
+            onclick="escribirSimbolo('caja4')"></div>
+            <div class = "caja" id="caja5" onMouseEnter="pintar('lightgoldenrodyellow','caja5')" onMouseLeave="pintar('#fff','caja5')"
+            onclick="escribirSimbolo('caja5')"></div>
+            <div class = "caja" id="caja6" onMouseEnter="pintar('lightgoldenrodyellow','caja6')" onMouseLeave="pintar('#fff','caja6')"
+            onclick="escribirSimbolo('caja6')"></div>
+        </div>
+        <div class="fila">
+            <div class = "caja" id="caja7" onMouseEnter="pintar('lightgoldenrodyellow','caja7')" onMouseLeave="pintar('#fff','caja7')"
+            onclick="escribirSimbolo('caja7')"></div>
+            <div class = "caja" id="caja8" onMouseEnter="pintar('lightgoldenrodyellow','caja8')" onMouseLeave="pintar('#fff','caja8')"
+            onclick="escribirSimbolo('caja8')"></div>
+            <div class = "caja" id="caja9" onMouseEnter="pintar('lightgoldenrodyellow','caja9')" onMouseLeave="pintar('#fff','caja9')"
+            onclick="escribirSimbolo('caja9')"></div>
+        </div>
+    </div>
+    <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset" onclick="resetearTablero()">Jugar de nuevo</button>
+        </section>
+
+
+<script src="./tateti.js"></script>
+<script src="ajustes.js"></script>
+</body>
+</html>
